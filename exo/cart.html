@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExoSnap</title>
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="shortcut icon" href="./assets/images/logo/oobib.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">ExoSnap</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#featured">New Arrivals</a></li>
+                <li><a href="#products">Trending</a></li>
+                <li><a href="#rated">Top Rated</a></li>
+                <li><a href="#other">Other Products</a></li>
+                <li><a href="#deal">Deal of the Week</a></li>
+                <li id="cart-icon">🛒 <span id="cart-count">0</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Unleash the Best Deals, Only at ExoSnap!</h1>
+                <p>Discover amazing products at great prices!</p>
+                <a href="#featured" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-products">
+            <div class="container">
+                <h2>New Arrivals</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="assets/images/products/skull.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Skullcandy Rail ANC In-Ear Noise Cancelling Wireless Earbuds</h3>
+                            <p class="product-price">₱5,000</p>
+                            <button class="add-to-cart" onclick="addToCart('Skullcandy Rail ANC In-Ear Noise Cancelling Wireless Earbudse Camera',5000 )">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/spigen.jpg" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Spigen (2 Packs) Tempered Glass EZ FIT GLAS.TR</h3>
+                            <p class="product-price">₱1,600</p>
+                            <button class="add-to-cart" onclick="addToCart('Spigen (2 Packs) Tempered Glass EZ FIT GLAS.TR',1600)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/ankerr.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Anker Prime 27, 650mAh Power Bank (250W)</h3>
+                            <p class="product-price">₱8,396</p>
+                            <button class="add-to-cart" onclick="addToCart('Anker Prime 27, 650mAh Power Bank (250W)', 8396)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/spigenn.jpg" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Spigen iPhone 13 Case Mag Armor</h3>
+                            <p class="product-price">₱980</p>
+                            <button class="add-to-cart" onclick="addToCart('Spigen iPhone 13 Case Mag Armor', 980)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/watch.png" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Huawei Watch Fit 4</h3>
+                            <p class="product-price">₱8,499</p>
+                            <button class="add-to-cart" onclick="addToCart('Huawei Watch Fit 4', 8499)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/sony.jpg" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Sony MDR-Z1R Premium Headphones</h3>
+                            <p class="product-price">₱100,000</p>
+                            <button class="add-to-cart" onclick="addToCart('Sony MDR-Z1R Premium Headphones', 100000)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/quad.webp" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">HyperX Quadcast 2 S</h3>
+                            <p class="product-price">₱10,170</p>
+                            <button class="add-to-cart" onclick="addToCart('HyperX Quadcast 2 S', 10170)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/logi.jpg" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Pro X Superlight 2 Dex</h3>
+                            <p class="product-price">₱179</p>
+                            <button class="add-to-cart" onclick="addToCart('Pro X Superlight 2 Dex', 179)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="all-products">
+            <div class="container">
+                <h2>Trendings</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="assets/images/products/razer-1.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Razer Blade 18</h3>
+                            <p class="product-price">₱197,750</p>
+                            <button class="add-to-cart" onclick="addToCart('Razer Blade 18', 197750)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/omen.webp"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">OMEN Max 16 Gaming Laptop (INTEL)</h3>
+                            <p class="product-price">₱203,400</p>
+                            <button class="add-to-cart" onclick="addToCart('OMEN Max 16 Gaming Laptop (INTEL)', 203400)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/lenovo.webp"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Legion Pro 7i(16",Gen 10)</h3>
+                            <p class="product-price">₱172,679</p>
+                            <button class="add-to-cart" onclick="addToCart('Legion Pro 7i(16,Gen 10)', 172679)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/16.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">iPhone 16 Pro</h3>
+                            <p class="product-price">₱69,990</p>
+                            <button class="add-to-cart" onclick="addToCart('iPhone 16 Pro', 69990)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/huawei.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Huawei Mate XT Ultimate Design</h3>
+                            <p class="product-price">₱199,999</p>
+                            <button class="add-to-cart" onclick="addToCart('Huawei Mate XT Ultimate Design', 199999)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/halaxy.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Galaxy S25 Ultra</h3>
+                            <p class="product-price">₱88,990</p>
+                            <button class="add-to-cart" onclick="addToCart('Galaxy S25 Ultra', 88990)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/tv.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">65" QLED QE1D 4K Tizen OS Smart TV</h3>
+                            <p class="product-price">₱42,999</p>
+                            <button class="add-to-cart" onclick="addToCart('65 QLED QE1D 4K Tizen OS Smart TV', 42999)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/acer.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Acer Predator Helios 18</h3>
+                            <p class="product-price">₱94,990</p>
+                            <button class="add-to-cart" onclick="addToCart('Acer Predator Helios 18', 94990)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="rated" class="all-products">
+            <div class="container">
+                <h2>Top Rated</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="assets/images/products/charger.webp"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Anker Prime 67W USB-C Charger</h3>
+                            <p class="product-price">₱3,390</p>
+                            <button class="add-to-cart" onclick="addToCart('Anker Prime 67W USB-C Charger', 3390)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/case.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Protective Hardshell Magsafe Case</h3>
+                            <p class="product-price">₱2,690</p>
+                            <button class="add-to-cart" onclick="addToCart('Protective Hardshell Magsafe Case', 2690)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/jbl.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">JBL Club One</h3>
+                            <p class="product-price">₱19,559</p>
+                            <button class="add-to-cart" onclick="addToCart('JBL Club One', 19559)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/xiaomi.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Xiaomi 15</h3>
+                            <p class="product-price">₱50,000</p>
+                            <button class="add-to-cart" onclick="addToCart('Xiaomi 15', 50000)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/fox.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Beyerdynamic FOX</h3>
+                            <p class="product-price">₱2,090</p>
+                            <button class="add-to-cart" onclick="addToCart('Beyerdynamic FOX', 2090)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/ugreen.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">UGREEN 20000mAh 100W Power Bank, Nexode Portable Charger USB C 3-Port PD</h3>
+                            <p class="product-price">₱2,984</p>
+                            <button class="add-to-cart" onclick="addToCart('UGREEN 20000mAh 100W Power Bank, Nexode Portable Charger USB C 3-Port PD', 2984)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/bip.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Bip 6 Smartwatch</h3>
+                            <p class="product-price">₱4,299</p>
+                            <button class="add-to-cart" onclick="addToCart('Bip 6 Smartwatch', 4299)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/asus.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Asus Stealth A16 AI+ A3XWJG-045PH</h3>
+                            <p class="product-price">₱310,995</p>
+                            <button class="add-to-cart" onclick="addToCart('Asus Stealth A16 AI+ A3XWJG-045PH', 310995)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="other" class="all-products">
+            <div class="container">
+                <h2>Other Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="assets/images/products/anker.webp"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Anker Nano 30W USB-C Charger</h3>
+                            <p class="product-price">₱1,020</p>
+                            <button class="add-to-cart" onclick="addToCart('Anker Nano 30W USB-C Charger', 1020)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/iniu.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">INIU Powerbank, 10000mAh 5V/3A USB C Portable Charger</h3>
+                            <p class="product-price">₱1,250</p>
+                            <button class="add-to-cart" onclick="addToCart('INIU Powerbank, 10000mAh 5V/3A USB C Portable Charger', 1250)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/samsung.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Samsung Galaxy S24 FE AI Phone</h3>
+                            <p class="product-price">₱35,999</p>
+                            <button class="add-to-cart" onclick="addToCart('Samsung Galaxy S24 FE AI Phone', 35999)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/len.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Lenovo 2024 Legion Gaming Laptop,GeForce RTX 4060,Core i9-149000HX, 14th gen Intel</h3>
+                            <p class="product-price">₱100,944</p>
+                            <button class="add-to-cart" onclick="addToCart('Lenovo 2024 Legion Gaming Laptop,GeForce RTX 4060,Core i9-149000HX, 14th gen Intel', 100994)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/products/boom.jpg"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">JBL Boombox</h3>
+                            <p class="product-price">₱23,999</p>
+                            <button class="add-to-cart" onclick="addToCart('JBL Boombox', 23999)">Add to Cart</button>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section id="deal" class="all-products">
+            <div class="container">
+                <h2>Deal of the Week</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="assets/images/products/nokia.png"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Nokia 3310</h3>
+                            <p class="product-price">₱3,200</p>
+                            <button class="add-to-cart" onclick="addToCart('Nokia 3310', 3200)">Add to Cart</button>
+                        </div>
+                    </div>
+                
+                    <div class="product-card">
+                        <img src="assets/images/products/dell.avif"  class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Dell Latitude E6420</h3>
+                            <p class="product-price">₱8,500</p>
+                            <button class="add-to-cart" onclick="addToCart('Dell Latitude E6420', 8500)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+    </main>
+
+    <div id="cart-modal">
+    <div class="cart-content" style="display: flex; flex-direction: column; gap: 20px;">
+        <span class="close" style="align-self: flex-end;">&times;</span>
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: ₱0</p>
+
+     
+        <div class="payment-options">
+            <h3>Select Payment Method</h3>
+            <label>
+                <input type="radio" name="payment" value="cod" checked onclick="toggleOnlineOptions(false)"> Cash on Delivery
+            </label><br>
+            <label>
+                <input type="radio" name="payment" value="online" onclick="toggleOnlineOptions(true)"> Online Payment
+            </label>
+
+           
+            <div id="online-options" style="margin-top: 10px; display: none;">
+                <p><strong>Choose Platform:</strong></p>
+                <label><input type="radio" name="online-method" value="gcash"> GCash</label><br>
+                <label><input type="radio" name="online-method" value="paymaya"> PayMaya</label><br>
+                <label><input type="radio" name="online-method" value="paypal"> PayPal</label>
+            </div>
+
+            <button id="place-order-btn" class="btn place-order-btn">Place Order</button>
+            <div id="order-message" class="order-message"></div>
+
+        </div>
+    </div>
+</div>
+
+
+    <script src="./assets/js/cart.js"> </script>
+</body>
+</html>
